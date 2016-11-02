@@ -14,3 +14,5 @@
     "cmd_type": "video",
     "mobile": "18900000001"
 }
+
+Creating a new branch is quick.
