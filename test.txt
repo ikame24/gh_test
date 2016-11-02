@@ -1,0 +1,53 @@
+11-02 10:44:13.452: I/com.elife.mobile.service.ConnTask(18466): onRecv() 收到数据字节数=378
+11-02 10:44:13.452: I/com.elife.mobile.service.ConnTask(18466): <<<<<<<<< 收到PUSH消息
+11-02 10:44:13.452: D/com.elife.mobile.service.HandlePushPacket(18466): handlePackage() 接收到的PUSH数据包decode_content={"cmd_type":"svc_sync","cmd":"biz.status","addr":"","send_time":"20161102104350068","trigger_type":5,"trigger_src":"TempHumTask","trigger_cid":"10:44","cmd_content":{"scene_id":"2732","biz_status":"eyJ3ZWF0aGVyX3N0YXRlIjoxLCJodW1pIjoiNjAiLCJ0ZW1wIjoiMjUuOCJ9\n"}}
+11-02 10:44:13.452: I/com.elife.mobile.service.HandlePushPacket(18466): PACKAGE_SIZE_RECORD: mobile=18900000001, cmd_type=svc_sync, package_size=352
+11-02 10:44:13.452: D/HomeWeatherBiz(18466): base_data_change() json_str:{"trigger_cid":"10:44","send_time":"20161102104350068","cmd":"biz.status","cmd_content":{"scene_id":"2732","biz_status":"eyJ3ZWF0aGVyX3N0YXRlIjoxLCJodW1pIjoiNjAiLCJ0ZW1wIjoiMjUuOCJ9\n"},"cmd_type":"svc_sync","trigger_type":5,"addr":"","trigger_src":"TempHumTask"}
+11-02 10:44:13.462: D/SceneModuleBiz(18466): base_data_change() json_str:{"trigger_cid":"10:44","send_time":"20161102104350068","cmd":"biz.status","cmd_content":{"scene_id":"2732","biz_status":"eyJ3ZWF0aGVyX3N0YXRlIjoxLCJodW1pIjoiNjAiLCJ0ZW1wIjoiMjUuOCJ9\n"},"cmd_type":"svc_sync","trigger_type":5,"addr":"","trigger_src":"TempHumTask"}
+11-02 10:44:13.462: D/com.elife.mobile.service.HandlePushPacket(18466): handleRecvMsg() 收到消息后发回应包: 
+11-02 10:44:13.462: D/com.elife.mobile.service.HandlePushPacket(18466): FA 01 89 07 46 58 DB 00 
+11-02 10:44:13.462: D/com.elife.mobile.service.HandlePushPacket(18466): 00 00 
+11-02 10:44:13.462: D/com.elife.mobile.ui.BaseActivity(18466): action = com.elife.data.change
+11-02 10:44:13.532: D/TVMgr(18466): doQueryTVPlayingStatus() 查询电视播放状态URL=http://192.168.0.233:20000/mobile_cmd.php?eventID=ctl.cmd&MOBILE=18900000001&DEVICE_ID=88688&HOME_ID=10005&APP_ID=11001&SID=310051430&CID=d4:97:0b:a4:21:f9, 参数={"json_data":"eyJhZGRyIjoiIiwiY21kIjoidmlkZW8iLCJjbWRfY29udGVudCI6IiIsImNpZCI6ImQ0Ojk3OjBi\nOmE0OjIxOmY5IiwiY21kX3R5cGUiOiJxcnkiLCJtb2JpbGUiOiIxODkwMDAwMDAwMSJ9\n"}
+11-02 10:44:13.532: D/TVMgr(18466): doQueryTVPlayingStatus() 查询电视播放状态返回内容={
+11-02 10:44:13.532: D/TVMgr(18466):    "json_data" : "eyJwcm9ncmVzcyI6MTcwMDAsInJldCI6MCwiYl9wbGF5ZXIiOnRydWUsImVwaXNvZGUiOjEwLCJ2\r\naWRlb190eXBlIjoicG9ydGFsX3ZpZGVvIiwibWFpbl9jaWQiOiJ1bmc0ZTVoMmJqc3VpOXEiLCJp\r\nbWciOiJodHRwOlwvXC9pLmd0aW1nLmNuXC9xcWxpdmVcL2ltZ1wvanBnY2FjaGVcL2ZpbGVzXC9x\r\ncXZpZGVvXC9iXC9idmRqc3JiMG50Z2I3ZTdfYS5qcGciLCJtYXhfdm9sdW1lIjoxNSwibWFyayI6\r\nIiIsIm9wZXJhdG9yIjoiT3BlcmF0b3JbIFRDUF9NT0JJTEUgKCAxODkwMDAwMDAwMSwgZDQ6OTc6\r\nMGI6YTQ6MjE6ZjkgKSBdIiwiYl9wbGF5Ijp0cnVlLCJ0aW1lMiI6NCwidGl0bGUiOiLmjJHmiJjo\r\ngIXogZTnm58g56ysMuWtoyIsInFxX3ZpZCI6InIwMDIwMzRoNW9jIiwicmVhbF9kdXJhdGlvbiI6\r\nNzIsImNobF9pZCI6IiIsInF4ZCI6MSwidm9sdW1lIjoyLCJzcmMiOiIiLCJxcV9jaWQiOiJidmRq\r\nc3JiMG50Z2I3ZTciLCJ0aWQiOi0xLCJjaGxfdHlwZSI6MCwidmlkIjowfQ=="
+11-02 10:44:13.532: D/TVMgr(18466): }
+11-02 10:44:13.532: D/TVMgr(18466): doQueryTVPlayingStatus() 查询电视播放状态返回内容=
+{
+    "progress": 17000,
+    "ret": 0,
+    "b_player": true,
+    "episode": 10,
+    "video_type": "portal_video",
+    "main_cid": "ung4e5h2bjsui9q",
+    "img": "http://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/b/bvdjsrb0ntgb7e7_a.jpg",
+    "max_volume": 15,
+    "mark": "",
+    "operator": "Operator[ TCP_MOBILE ( 18900000001, d4:97:0b:a4:21:f9 ) ]",
+    "b_play": true,
+    "time2": 4,
+    "title": "挑战者联盟 第2季",
+    "qq_vid": "r002034h5oc",
+    "real_duration": 72,
+    "chl_id": "",
+    "qxd": 1,
+    "volume": 2,
+    "src": "",
+    "qq_cid": "bvdjsrb0ntgb7e7",
+    "tid": -1,
+    "chl_type": 0,
+    "vid": 0
+}
+
+
+11-02 10:44:15.192: D/UserPreference(18466): getString(msgLastTimestamp_18900000001:20161102104335710)
+11-02 10:44:15.202: D/com.elife.mobile.service.LoadMissingMsgTask(18466): getLastMsgTime() 收到过的最后消息的时间=20161102104335710
+11-02 10:44:15.202: I/com.elife.mobile.service.LoadMissingMsgTask(18466): startLoadMissingMsg() 开始-查询遗漏消息……
+11-02 10:44:15.252: D/com.elife.mobile.ui.msg.MsgApi(18466): queryMissingMsg() 查询遗漏消息URL=http://192.168.0.233:20000/mobile_query.php?eventID=query.msg&MOBILE=18900000001&DEVICE_ID=88688&HOME_ID=10005&APP_ID=11001&SID=310051430&CID=d4:97:0b:a4:21:f9&MSG_TIME=20161102104335710
+11-02 10:44:15.252: D/com.elife.mobile.ui.msg.MsgApi(18466): queryMissingMsg() 定时查询消息返回结果={"ret":0,"sys_count":"0","msg_count":"0"}
+11-02 10:44:15.252: E/com.elife.mobile.biz.MsgBiz(18466): parseShareMsg() 分享消息数量msg_count=0
+11-02 10:44:15.252: E/com.elife.mobile.biz.MsgBiz(18466): parse_sys_msg() 解析返回的系统该消息sys_count=0
+11-02 10:44:15.252: I/com.elife.mobile.service.LoadMissingMsgTask(18466): startLoadMissingMsg() 1 查询遗漏消息temp_time=, curr_last_time=, handle_share_count=0, handle_sys_count=0, share_count=0, sys_count=0
+11-02 10:44:15.252: D/UserPreference(18466): getString(msgLastTimestamp_18900000001:20161102104335710)
+11-02 10:44:15.252: D/com.elife.mobile.service.LoadMissingMsgTask(18466): loadShareMsg() 从数据库中查询最后消息时间last_time=20161102104335710
+11-02 10:44:15.252: I/com.elife.mobile.service.LoadMissingMsgTask(18466): startLoadMissingMsg() 结束-查询遗漏消息……
