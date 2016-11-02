@@ -18,3 +18,5 @@
 Creating a new branch is quick and simple.123
 
 new branch dev
+
+in branch dev2
