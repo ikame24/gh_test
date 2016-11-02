@@ -1,0 +1,16 @@
+{
+    "cmd": "vod",
+    "cmd_content": {
+        "index": 1,
+        "qq_vid": "",
+        "main_cid": "ung4e5h2bjsui9q",
+        "product_code": "63008",
+        "v_source": "qq",
+        "qq_cid": "ung4e5h2bjsui9q",
+        "tid": "4",
+        "vid": "0"
+    },
+    "cid": "d4:97:0b:a4:21:f9",
+    "cmd_type": "video",
+    "mobile": "18900000001"
+}
