@@ -1,0 +1,688 @@
+2016-11-06 15:35:12+0800 [scrapy] INFO: Scrapy 0.25.1 started (bot: poxiao)
+2016-11-06 15:35:12+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-06 15:35:12+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poxiao.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 32, 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['poxiao.spiders'], 'BOT_NAME': 'poxiao', 'DOWNLOAD_TIMEOUT': 10, 'CONCURRENT_ITEMS': 32, 'LOG_FILE': 'D:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\logs\\px.log', 'DOWNLOAD_DELAY': 0.5}
+2016-11-06 15:35:13+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, CoreStats, SpiderState
+2016-11-06 15:35:13+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-06 15:35:13+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-06 15:35:13+0800 [scrapy] INFO: Enabled item pipelines: PoxiaoPipeline
+2016-11-06 15:35:13+0800 [poxiao] INFO: Spider opened
+2016-11-06 15:35:13+0800 [poxiao] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-06 15:35:17+0800 [scrapy] INFO: 添加电影: 绝对控制, 结果: 1
+2016-11-06 15:35:17+0800 [scrapy] INFO: 添加电影: 谍影重重5, 结果: 1
+2016-11-06 15:35:18+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41716.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:18+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/34458.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\u2022' in position 13: illegal multibyte sequence
+	
+2016-11-06 15:35:19+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41718.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:20+0800 [scrapy] INFO: 添加电影: 暗色天堂, 结果: 1
+2016-11-06 15:35:20+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41724.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:21+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41691.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:21+0800 [scrapy] INFO: 添加电影: 反贪风暴2, 结果: 1
+2016-11-06 15:35:22+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41698.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:23+0800 [scrapy] INFO: 添加电影: 荒村凶间/妖夜荒踪, 结果: 1
+2016-11-06 15:35:23+0800 [scrapy] INFO: 添加电影: 老九门番外之二月花开, 结果: 1
+2016-11-06 15:35:24+0800 [scrapy] INFO: 添加电影: 小姐/下女诱罪, 结果: 1
+2016-11-06 15:35:24+0800 [scrapy] INFO: 添加电影: 七月与安生, 结果: 1
+2016-11-06 15:35:25+0800 [scrapy] INFO: 添加电影: 情欲房/无限春光27, 结果: 1
+2016-11-06 15:35:26+0800 [scrapy] INFO: 添加电影: 魔宫魅影, 结果: 1
+2016-11-06 15:35:26+0800 [scrapy] INFO: 添加电影: 本小姐乃白鸟丽子电影版, 结果: 1
+2016-11-06 15:35:27+0800 [scrapy] INFO: 添加电影: 阴影之下, 结果: 1
+2016-11-06 15:35:27+0800 [scrapy] ERROR: '[Failure instance: Traceback: <class \'_mysql_exceptions.DataError\'>: (1406, "Data too long for column \'poster\' at row 1")\nD:\\Program Files\\Python27\\lib\\threading.py:783:__bootstrap\nD:\\Program Files\\Python27\\lib\\threading.py:810:__bootstrap_inner\nD:\\Program Files\\Python27\\lib\\threading.py:763:run\n--- <exception caught here> ---\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\threadpool.py:196:_worker\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\context.py:118:callWithContext\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\context.py:81:callWithContext\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\enterprise\\adbapi.py:448:_runInteraction\nD:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\poxiao\\pipelines.py:48:_conditional_insert\nD:\\Program Files\\Python27\\lib\\site-packages\\MySQLdb\\cursors.py:174:execute\nD:\\Program Files\\Python27\\lib\\site-packages\\MySQLdb\\connections.py:36:defaulterrorhandler\n]'
+2016-11-06 15:35:28+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41714.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:28+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41694.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:35:28+0800 [poxiao] INFO: Closing spider (finished)
+2016-11-06 15:35:28+0800 [poxiao] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 6529,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 104833,
+	 'downloader/response_count': 22,
+	 'downloader/response_status_count/200': 22,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 11, 6, 7, 35, 28, 704000),
+	 'item_scraped_count': 13,
+	 'log_count/ERROR': 8,
+	 'log_count/INFO': 3,
+	 'request_depth_max': 1,
+	 'response_received_count': 22,
+	 'scheduler/dequeued': 22,
+	 'scheduler/dequeued/memory': 22,
+	 'scheduler/enqueued': 22,
+	 'scheduler/enqueued/memory': 22,
+	 'spider_exceptions/UnicodeEncodeError': 8,
+	 'start_time': datetime.datetime(2016, 11, 6, 7, 35, 13, 573000)}
+2016-11-06 15:35:28+0800 [poxiao] INFO: Spider closed (finished)
+2016-11-06 15:36:49+0800 [scrapy] INFO: Scrapy 0.25.1 started (bot: poxiao)
+2016-11-06 15:36:49+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-06 15:36:49+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poxiao.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 32, 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['poxiao.spiders'], 'BOT_NAME': 'poxiao', 'DOWNLOAD_TIMEOUT': 10, 'CONCURRENT_ITEMS': 32, 'LOG_FILE': 'D:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\logs\\px.log', 'DOWNLOAD_DELAY': 0.5}
+2016-11-06 15:36:49+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, CoreStats, SpiderState
+2016-11-06 15:36:50+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-06 15:36:50+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-06 15:36:50+0800 [scrapy] INFO: Enabled item pipelines: PoxiaoPipeline
+2016-11-06 15:36:50+0800 [poxiao] INFO: Spider opened
+2016-11-06 15:36:50+0800 [poxiao] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-06 15:36:51+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41691.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:36:51+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41714.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:36:52+0800 [scrapy] INFO: 添加电影: 绝对控制, 结果: 1
+2016-11-06 15:36:52+0800 [scrapy] INFO: 添加电影: 谍影重重5, 结果: 1
+2016-11-06 15:36:53+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41716.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:36:54+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/34458.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\u2022' in position 13: illegal multibyte sequence
+	
+2016-11-06 15:36:54+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41718.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:36:55+0800 [scrapy] INFO: 添加电影: 暗色天堂, 结果: 1
+2016-11-06 15:36:56+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41724.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:36:56+0800 [scrapy] INFO: 添加电影: 荒村凶间/妖夜荒踪, 结果: 1
+2016-11-06 15:36:57+0800 [scrapy] INFO: 添加电影: 老九门番外之二月花开, 结果: 1
+2016-11-06 15:36:58+0800 [scrapy] INFO: 添加电影: 小姐/下女诱罪, 结果: 1
+2016-11-06 15:36:58+0800 [scrapy] INFO: 添加电影: 七月与安生, 结果: 1
+2016-11-06 15:36:59+0800 [scrapy] INFO: 添加电影: 情欲房/无限春光27, 结果: 1
+2016-11-06 15:37:00+0800 [scrapy] INFO: 添加电影: 魔宫魅影, 结果: 1
+2016-11-06 15:37:00+0800 [scrapy] INFO: 添加电影: 本小姐乃白鸟丽子电影版, 结果: 1
+2016-11-06 15:37:01+0800 [scrapy] INFO: 添加电影: 阴影之下, 结果: 1
+2016-11-06 15:37:02+0800 [scrapy] INFO: 添加电影: 名侦探柯南：纯黑的噩梦, 结果: 1
+2016-11-06 15:37:02+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41694.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:37:03+0800 [scrapy] INFO: 添加电影: 反贪风暴2, 结果: 1
+2016-11-06 15:37:04+0800 [poxiao] ERROR: Spider error processing <GET http://www.poxiao.com//movie/41698.html> (referer: http://www.poxiao.com)
+	Traceback (most recent call last):
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "D:\Program Files\Python27\lib\site-packages\twisted\internet\task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\utils\defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\Program Files\Python27\lib\site-packages\scrapy-0.25.1-py2.7.egg\scrapy\contrib\spidermiddleware\depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "D:\work_spaces\python_space\j2ee_workspace\poxiaos\poxiao\poxiao\spiders\pxspider.py", line 145, in parse_details
+	    print 'desc = ' + descrs[0].encode('gbk')
+	exceptions.UnicodeEncodeError: 'gbk' codec can't encode character u'\xa0' in position 0: illegal multibyte sequence
+	
+2016-11-06 15:37:04+0800 [poxiao] INFO: Closing spider (finished)
+2016-11-06 15:37:04+0800 [poxiao] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 6529,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 80720,
+	 'downloader/response_count': 22,
+	 'downloader/response_status_count/200': 22,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 11, 6, 7, 37, 4, 286000),
+	 'item_scraped_count': 13,
+	 'log_count/ERROR': 8,
+	 'log_count/INFO': 3,
+	 'request_depth_max': 1,
+	 'response_received_count': 22,
+	 'scheduler/dequeued': 22,
+	 'scheduler/dequeued/memory': 22,
+	 'scheduler/enqueued': 22,
+	 'scheduler/enqueued/memory': 22,
+	 'spider_exceptions/UnicodeEncodeError': 8,
+	 'start_time': datetime.datetime(2016, 11, 6, 7, 36, 50, 203000)}
+2016-11-06 15:37:04+0800 [poxiao] INFO: Spider closed (finished)
+2016-11-06 15:40:08+0800 [scrapy] INFO: Scrapy 0.25.1 started (bot: poxiao)
+2016-11-06 15:40:08+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-06 15:40:08+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poxiao.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 32, 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['poxiao.spiders'], 'BOT_NAME': 'poxiao', 'DOWNLOAD_TIMEOUT': 10, 'CONCURRENT_ITEMS': 32, 'LOG_FILE': 'D:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\logs\\px.log', 'DOWNLOAD_DELAY': 0.5}
+2016-11-06 15:40:08+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, CoreStats, SpiderState
+2016-11-06 15:40:08+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-06 15:40:08+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-06 15:40:08+0800 [scrapy] INFO: Enabled item pipelines: PoxiaoPipeline
+2016-11-06 15:40:08+0800 [poxiao] INFO: Spider opened
+2016-11-06 15:40:08+0800 [poxiao] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-06 15:40:09+0800 [scrapy] INFO: 添加电影: 名侦探柯南：纯黑的噩梦, 结果: 1
+2016-11-06 15:40:09+0800 [scrapy] INFO: 添加电影: 少年师爷之大禹宝藏, 结果: 1
+2016-11-06 15:40:10+0800 [scrapy] INFO: 添加电影: 绝对控制, 结果: 1
+2016-11-06 15:40:11+0800 [scrapy] INFO: 添加电影: 谍影重重5, 结果: 1
+2016-11-06 15:40:11+0800 [scrapy] INFO: 添加电影: 六弄咖啡馆, 结果: 1
+2016-11-06 15:40:12+0800 [scrapy] INFO: 添加电影: 速度与激情5B, 结果: 1
+2016-11-06 15:40:13+0800 [scrapy] INFO: 添加电影: 王牌逗王牌, 结果: 1
+2016-11-06 15:40:13+0800 [scrapy] INFO: 添加电影: 暗色天堂, 结果: 1
+2016-11-06 15:40:14+0800 [scrapy] ERROR: "[Failure instance: Traceback: <type 'exceptions.KeyError'>: 'update_time'\nD:\\Program Files\\Python27\\lib\\threading.py:783:__bootstrap\nD:\\Program Files\\Python27\\lib\\threading.py:810:__bootstrap_inner\nD:\\Program Files\\Python27\\lib\\threading.py:763:run\n--- <exception caught here> ---\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\threadpool.py:196:_worker\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\context.py:118:callWithContext\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\context.py:81:callWithContext\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\enterprise\\adbapi.py:448:_runInteraction\nD:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\poxiao\\pipelines.py:48:_conditional_insert\nD:\\Program Files\\Python27\\lib\\site-packages\\scrapy-0.25.1-py2.7.egg\\scrapy\\item.py:52:__getitem__\n]"
+2016-11-06 15:40:14+0800 [scrapy] ERROR: "[Failure instance: Traceback: <type 'exceptions.KeyError'>: 'update_time'\nD:\\Program Files\\Python27\\lib\\threading.py:783:__bootstrap\nD:\\Program Files\\Python27\\lib\\threading.py:810:__bootstrap_inner\nD:\\Program Files\\Python27\\lib\\threading.py:763:run\n--- <exception caught here> ---\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\threadpool.py:196:_worker\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\context.py:118:callWithContext\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\python\\context.py:81:callWithContext\nD:\\Program Files\\Python27\\lib\\site-packages\\twisted\\enterprise\\adbapi.py:448:_runInteraction\nD:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\poxiao\\pipelines.py:48:_conditional_insert\nD:\\Program Files\\Python27\\lib\\site-packages\\scrapy-0.25.1-py2.7.egg\\scrapy\\item.py:52:__getitem__\n]"
+2016-11-06 15:40:15+0800 [scrapy] INFO: 添加电影: 丘奇先生, 结果: 1
+2016-11-06 15:40:16+0800 [scrapy] INFO: 添加电影: 荒村凶间/妖夜荒踪, 结果: 1
+2016-11-06 15:40:16+0800 [scrapy] INFO: 添加电影: 老九门番外之二月花开, 结果: 1
+2016-11-06 15:40:17+0800 [scrapy] INFO: 添加电影: 小姐/下女诱罪, 结果: 1
+2016-11-06 15:40:17+0800 [scrapy] INFO: 添加电影: 七月与安生, 结果: 1
+2016-11-06 15:40:18+0800 [scrapy] INFO: 添加电影: 情欲房/无限春光27, 结果: 1
+2016-11-06 15:40:19+0800 [scrapy] INFO: 添加电影: 魔宫魅影, 结果: 1
+2016-11-06 15:40:19+0800 [scrapy] INFO: 添加电影: 本小姐乃白鸟丽子电影版, 结果: 1
+2016-11-06 15:40:20+0800 [scrapy] INFO: 添加电影: 阴影之下, 结果: 1
+2016-11-06 15:40:20+0800 [scrapy] INFO: 添加电影: 夜魔人, 结果: 1
+2016-11-06 15:40:21+0800 [scrapy] INFO: 添加电影: 反贪风暴2, 结果: 1
+2016-11-06 15:40:21+0800 [poxiao] INFO: Closing spider (finished)
+2016-11-06 15:40:21+0800 [poxiao] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 6529,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 80714,
+	 'downloader/response_count': 22,
+	 'downloader/response_status_count/200': 22,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 11, 6, 7, 40, 21, 646000),
+	 'item_scraped_count': 21,
+	 'log_count/INFO': 3,
+	 'request_depth_max': 1,
+	 'response_received_count': 22,
+	 'scheduler/dequeued': 22,
+	 'scheduler/dequeued/memory': 22,
+	 'scheduler/enqueued': 22,
+	 'scheduler/enqueued/memory': 22,
+	 'start_time': datetime.datetime(2016, 11, 6, 7, 40, 8, 721000)}
+2016-11-06 15:40:21+0800 [poxiao] INFO: Spider closed (finished)
+2016-11-06 15:48:44+0800 [scrapy] INFO: Scrapy 0.25.1 started (bot: poxiao)
+2016-11-06 15:48:44+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-06 15:48:44+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poxiao.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 32, 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['poxiao.spiders'], 'BOT_NAME': 'poxiao', 'DOWNLOAD_TIMEOUT': 10, 'CONCURRENT_ITEMS': 32, 'LOG_FILE': 'D:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\logs\\px.log', 'DOWNLOAD_DELAY': 0.5}
+2016-11-06 15:48:44+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, CoreStats, SpiderState
+2016-11-06 15:48:45+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-06 15:48:45+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-06 15:48:45+0800 [scrapy] INFO: Enabled item pipelines: PoxiaoPipeline
+2016-11-06 15:48:45+0800 [poxiao] INFO: Spider opened
+2016-11-06 15:48:45+0800 [poxiao] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-06 15:48:46+0800 [scrapy] INFO: 添加电影: 海底总动员2：多莉去哪儿, 结果: 1
+2016-11-06 15:48:46+0800 [scrapy] INFO: 添加电影: 少年师爷之大禹宝藏, 结果: 1
+2016-11-06 15:48:47+0800 [scrapy] INFO: 添加电影: 绝对控制, 结果: 1
+2016-11-06 15:48:48+0800 [scrapy] INFO: 添加电影: 谍影重重5, 结果: 1
+2016-11-06 15:48:48+0800 [scrapy] INFO: 添加电影: 六弄咖啡馆, 结果: 1
+2016-11-06 15:48:49+0800 [scrapy] INFO: 添加电影: 速度与激情5B, 结果: 1
+2016-11-06 15:48:49+0800 [scrapy] INFO: 添加电影: 王牌逗王牌, 结果: 1
+2016-11-06 15:48:50+0800 [scrapy] INFO: 添加电影: 暗色天堂, 结果: 1
+2016-11-06 15:48:51+0800 [scrapy] INFO: 添加电影: 光杆司令, 结果: 1
+2016-11-06 15:48:51+0800 [scrapy] INFO: 添加电影: 小姐/下女诱罪, 结果: 1
+2016-11-06 15:48:52+0800 [scrapy] INFO: 添加电影: 七月与安生, 结果: 1
+2016-11-06 15:48:52+0800 [scrapy] INFO: 添加电影: 情欲房/无限春光27, 结果: 1
+2016-11-06 15:48:53+0800 [scrapy] INFO: 添加电影: 魔宫魅影, 结果: 1
+2016-11-06 15:48:53+0800 [scrapy] INFO: 添加电影: 本小姐乃白鸟丽子电影版, 结果: 1
+2016-11-06 15:48:54+0800 [scrapy] INFO: 添加电影: 阴影之下, 结果: 1
+2016-11-06 15:48:55+0800 [scrapy] INFO: 添加电影: 名侦探柯南：纯黑的噩梦, 结果: 1
+2016-11-06 15:48:55+0800 [scrapy] INFO: 添加电影: 夜魔人, 结果: 1
+2016-11-06 15:48:56+0800 [scrapy] INFO: 添加电影: 反贪风暴2, 结果: 1
+2016-11-06 15:48:57+0800 [scrapy] INFO: 添加电影: 丘奇先生, 结果: 1
+2016-11-06 15:48:57+0800 [scrapy] INFO: 添加电影: 荒村凶间/妖夜荒踪, 结果: 1
+2016-11-06 15:48:58+0800 [poxiao] INFO: Closing spider (finished)
+2016-11-06 15:48:58+0800 [poxiao] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 6529,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 98036,
+	 'downloader/response_count': 22,
+	 'downloader/response_status_count/200': 22,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 11, 6, 7, 48, 58, 356000),
+	 'item_scraped_count': 21,
+	 'log_count/INFO': 3,
+	 'request_depth_max': 1,
+	 'response_received_count': 22,
+	 'scheduler/dequeued': 22,
+	 'scheduler/dequeued/memory': 22,
+	 'scheduler/enqueued': 22,
+	 'scheduler/enqueued/memory': 22,
+	 'start_time': datetime.datetime(2016, 11, 6, 7, 48, 45, 142000)}
+2016-11-06 15:48:58+0800 [poxiao] INFO: Spider closed (finished)
+2016-11-06 15:48:58+0800 [scrapy] INFO: 添加电影: 老九门番外之二月花开, 结果: 1
+2016-11-06 15:59:59+0800 [scrapy] INFO: Scrapy 0.25.1 started (bot: poxiao)
+2016-11-06 15:59:59+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-06 15:59:59+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poxiao.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 32, 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['poxiao.spiders'], 'BOT_NAME': 'poxiao', 'DOWNLOAD_TIMEOUT': 10, 'CONCURRENT_ITEMS': 32, 'LOG_FILE': 'D:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\logs\\px.log', 'DOWNLOAD_DELAY': 0.5}
+2016-11-06 15:59:59+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, CoreStats, SpiderState
+2016-11-06 15:59:59+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-06 15:59:59+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-06 15:59:59+0800 [scrapy] INFO: Enabled item pipelines: PoxiaoPipeline
+2016-11-06 15:59:59+0800 [poxiao] INFO: Spider opened
+2016-11-06 15:59:59+0800 [poxiao] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-06 16:00:00+0800 [scrapy] INFO: 添加电影: 海底总动员2：多莉去哪儿, 结果: 1
+2016-11-06 16:00:01+0800 [scrapy] INFO: 添加电影: 反贪风暴2, 结果: 1
+2016-11-06 16:00:02+0800 [scrapy] INFO: 添加电影: 丘奇先生, 结果: 1
+2016-11-06 16:00:02+0800 [scrapy] INFO: 添加电影: 荒村凶间/妖夜荒踪, 结果: 1
+2016-11-06 16:00:03+0800 [scrapy] INFO: 添加电影: 老九门番外之二月花开, 结果: 1
+2016-11-06 16:00:03+0800 [scrapy] INFO: 添加电影: 小姐/下女诱罪, 结果: 1
+2016-11-06 16:00:05+0800 [scrapy] INFO: 添加电影: 七月与安生, 结果: 1
+2016-11-06 16:00:05+0800 [scrapy] INFO: 添加电影: 情欲房/无限春光27, 结果: 1
+2016-11-06 16:00:05+0800 [scrapy] INFO: 添加电影: 魔宫魅影, 结果: 1
+2016-11-06 16:00:06+0800 [scrapy] INFO: 添加电影: 本小姐乃白鸟丽子电影版, 结果: 1
+2016-11-06 16:00:07+0800 [scrapy] INFO: 添加电影: 阴影之下, 结果: 1
+2016-11-06 16:00:07+0800 [scrapy] INFO: 添加电影: 名侦探柯南：纯黑的噩梦, 结果: 1
+2016-11-06 16:00:08+0800 [scrapy] INFO: 添加电影: 少年师爷之大禹宝藏, 结果: 1
+2016-11-06 16:00:08+0800 [scrapy] INFO: 添加电影: 绝对控制, 结果: 1
+2016-11-06 16:00:09+0800 [scrapy] INFO: 添加电影: 谍影重重5, 结果: 1
+2016-11-06 16:00:10+0800 [scrapy] INFO: 添加电影: 六弄咖啡馆, 结果: 1
+2016-11-06 16:00:11+0800 [scrapy] INFO: 添加电影: 速度与激情5B, 结果: 1
+2016-11-06 16:00:11+0800 [scrapy] INFO: 添加电影: 王牌逗王牌, 结果: 1
+2016-11-06 16:00:12+0800 [scrapy] INFO: 添加电影: 暗色天堂, 结果: 1
+2016-11-06 16:00:12+0800 [scrapy] INFO: 添加电影: 光杆司令, 结果: 1
+2016-11-06 16:00:13+0800 [scrapy] INFO: 添加电影: 夜魔人, 结果: 1
+2016-11-06 16:00:13+0800 [poxiao] INFO: Closing spider (finished)
+2016-11-06 16:00:13+0800 [poxiao] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 6529,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 104049,
+	 'downloader/response_count': 22,
+	 'downloader/response_status_count/200': 22,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 11, 6, 8, 0, 13, 660000),
+	 'item_scraped_count': 21,
+	 'log_count/INFO': 3,
+	 'request_depth_max': 1,
+	 'response_received_count': 22,
+	 'scheduler/dequeued': 22,
+	 'scheduler/dequeued/memory': 22,
+	 'scheduler/enqueued': 22,
+	 'scheduler/enqueued/memory': 22,
+	 'start_time': datetime.datetime(2016, 11, 6, 7, 59, 59, 998000)}
+2016-11-06 16:00:13+0800 [poxiao] INFO: Spider closed (finished)
+2016-11-06 16:01:49+0800 [scrapy] INFO: Scrapy 0.25.1 started (bot: poxiao)
+2016-11-06 16:01:49+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-11-06 16:01:49+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'poxiao.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 32, 'CONCURRENT_REQUESTS': 32, 'SPIDER_MODULES': ['poxiao.spiders'], 'BOT_NAME': 'poxiao', 'DOWNLOAD_TIMEOUT': 10, 'CONCURRENT_ITEMS': 32, 'LOG_FILE': 'D:\\work_spaces\\python_space\\j2ee_workspace\\poxiaos\\poxiao\\logs\\px.log', 'DOWNLOAD_DELAY': 0.5}
+2016-11-06 16:01:49+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, CoreStats, SpiderState
+2016-11-06 16:01:49+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-11-06 16:01:49+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-11-06 16:01:49+0800 [scrapy] INFO: Enabled item pipelines: PoxiaoPipeline
+2016-11-06 16:01:49+0800 [poxiao] INFO: Spider opened
+2016-11-06 16:01:49+0800 [poxiao] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-06 16:01:50+0800 [scrapy] INFO: 添加电影: 海底总动员2：多莉去哪儿, 结果: 1
+2016-11-06 16:01:51+0800 [scrapy] INFO: 添加电影: 夜魔人, 结果: 1
+2016-11-06 16:01:51+0800 [scrapy] INFO: 添加电影: 反贪风暴2, 结果: 1
+2016-11-06 16:01:52+0800 [scrapy] INFO: 添加电影: 丘奇先生, 结果: 1
+2016-11-06 16:01:53+0800 [scrapy] INFO: 添加电影: 荒村凶间/妖夜荒踪, 结果: 1
+2016-11-06 16:01:53+0800 [scrapy] INFO: 添加电影: 老九门番外之二月花开, 结果: 1
+2016-11-06 16:01:54+0800 [scrapy] INFO: 添加电影: 小姐/下女诱罪, 结果: 1
+2016-11-06 16:01:54+0800 [scrapy] INFO: 添加电影: 七月与安生, 结果: 1
+2016-11-06 16:01:58+0800 [scrapy] INFO: 添加电影: 情欲房/无限春光27, 结果: 1
+2016-11-06 16:01:59+0800 [scrapy] INFO: 添加电影: 阴影之下, 结果: 1
+2016-11-06 16:01:59+0800 [scrapy] INFO: 添加电影: 名侦探柯南：纯黑的噩梦, 结果: 1
+2016-11-06 16:01:59+0800 [scrapy] INFO: 添加电影: 绝对控制, 结果: 1
+2016-11-06 16:01:59+0800 [scrapy] INFO: 添加电影: 少年师爷之大禹宝藏, 结果: 1
+2016-11-06 16:01:59+0800 [scrapy] INFO: 添加电影: 谍影重重5, 结果: 1
+2016-11-06 16:02:00+0800 [scrapy] INFO: 添加电影: 六弄咖啡馆, 结果: 1
+2016-11-06 16:02:01+0800 [scrapy] INFO: 添加电影: 速度与激情5B, 结果: 1
+2016-11-06 16:02:02+0800 [scrapy] INFO: 添加电影: 王牌逗王牌, 结果: 1
+2016-11-06 16:02:02+0800 [scrapy] INFO: 添加电影: 暗色天堂, 结果: 1
+2016-11-06 16:02:02+0800 [scrapy] INFO: 添加电影: 魔宫魅影, 结果: 1
+2016-11-06 16:02:02+0800 [scrapy] INFO: 添加电影: 本小姐乃白鸟丽子电影版, 结果: 1
+2016-11-06 16:02:02+0800 [scrapy] INFO: 添加电影: 光杆司令, 结果: 1
+2016-11-06 16:02:02+0800 [poxiao] INFO: Closing spider (finished)
+2016-11-06 16:02:02+0800 [poxiao] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 6529,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 80828,
+	 'downloader/response_count': 22,
+	 'downloader/response_status_count/200': 22,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 11, 6, 8, 2, 2, 788000),
+	 'item_scraped_count': 21,
+	 'log_count/INFO': 3,
+	 'request_depth_max': 1,
+	 'response_received_count': 22,
+	 'scheduler/dequeued': 22,
+	 'scheduler/dequeued/memory': 22,
+	 'scheduler/enqueued': 22,
+	 'scheduler/enqueued/memory': 22,
+	 'start_time': datetime.datetime(2016, 11, 6, 8, 1, 49, 778000)}
+2016-11-06 16:02:02+0800 [poxiao] INFO: Spider closed (finished)
